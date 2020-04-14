@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="Description" content="A simple form to estimate COVID-19 impact">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="preload" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="preload"
+    rel="stylesheet">
   <!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-<!-- Google Fonts -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-<!-- Bootstrap core CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-<!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
 
- <link href="styles.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
   <title>Build For SDGs</title>
 </head>
+
 <body>
   <!-- Just an image -->
-<nav class="navbar navbar-dark primary-color">
-  <a class="navbar-brand" href="#">
-    <h1>Build For SDGs</h1>
-    <img src="images/sdg-wheel_transparent_web_large.png" alt="SDG wheel logo" width="48" height="48">
-  </a>
-</nav>
+  <nav class="navbar navbar-dark primary-color">
+    <a class="navbar-brand" href="#">
+      <h1>Build For SDGs</h1>
+      <img src="images/sdg-wheel_transparent_web_large.png" alt="SDG wheel logo" width="48" height="48">
+    </a>
+  </nav>
 
-   <!-- <header class="header">
-    <h1>Build For SDGs</h1>
-    <img src="images/sdg-wheel_transparent_web_large.png" alt="SDG wheel logo" width="48" height="48">
-  </header>  -->
+
   <main>
     <h2>COVID-19 Estimator</h2>
     <!-- Grid row -->
@@ -37,35 +37,37 @@
 
     <!--Card-->
     <div class="card">
-    <form class="form">
-      <section class="form-section">
-        <div class="form-section-info">
-          <h2>Region</h2>
-          <p style="font-size: 20px; color:black;">Some basic information about the region.</p>
-        </div>
-        <div class="form-section-inputs">
-          <div class="form-input">
-            <label for="regionName">Name</label>
-            <input type="text" id="regionName" name="regionName" data-region-name placeholder="Ex. Africa" required>
+      <form class="form">
+        <section class="form-section">
+          <div class="form-section-info">
+            <h2>Region</h2>
+            <p style="font-size: 20px; color:black;">Some basic information about the region.</p>
           </div>
-          <div class="form-input">
-            <label for="regionAvgAge">Average Age</label>
-            <input type="text" id="regionAvgAge" name="regionAvgAge" data-region-avgAge placeholder="Ex. 17" required>
+          <div class="form-section-inputs">
+            <div class="form-input">
+              <label for="regionName">Name</label>
+              <input type="text" id="regionName" name="regionName" data-region-name placeholder="Ex. Africa" required>
+            </div>
+            <div class="form-input">
+              <label for="regionAvgAge">Average Age</label>
+              <input type="text" id="regionAvgAge" name="regionAvgAge" data-region-avgAge placeholder="Ex. 17" required>
+            </div>
+            <div class="form-input">
+              <label for="regionAvgDailyIncomeInUSD">Average Daily Income In USD</label>
+              <input type="text" id="regionAvgDailyIncomeInUSD" data-region-avgDailyIncomeInUSD placeholder="Ex. 5"
+                required>
+            </div>
+            <div class="form-input">
+              <label for="regionAvgDailyIncomePopulation">Percentage of Population With Average Daily Income</label>
+              <input type="text" id="regionAvgDailyIncomePopulation" data-region-avgDailyIncomePopulation
+                placeholder="Ex. 0.75 for 70%" required>
+            </div>
           </div>
-          <div class="form-input">
-            <label for="regionAvgDailyIncomeInUSD">Average Daily Income In USD</label>
-            <input type="text" id="regionAvgDailyIncomeInUSD" data-region-avgDailyIncomeInUSD placeholder="Ex. 5" required>
-          </div>
-          <div class="form-input">
-            <label for="regionAvgDailyIncomePopulation">Percentage of Population With Average Daily Income</label>
-            <input type="text" id="regionAvgDailyIncomePopulation" data-region-avgDailyIncomePopulation placeholder="Ex. 0.75 for 70%" required>
-          </div>
-        </div>
-      </section>
-      </div>
-  
+        </section>
+    </div>
 
-<div class="card">
+
+    <div class="card">
       <section class="form-section">
         <div class="form-section-info">
           <h2>Infection Data</h2>
@@ -82,41 +84,43 @@
           </div>
           <div class="form-input">
             <label for="totalHospitalBeds">Total Number of Hospital Beds</label>
-            <input type="number" id="totalHospitalBeds" name="totalHospitalBeds" placeholder="5000" data-total-hospital-beds required>
+            <input type="number" id="totalHospitalBeds" name="totalHospitalBeds" placeholder="5000"
+              data-total-hospital-beds required>
           </div>
         </div>
       </section>
-</div>
-      <section class="form-section">
-        <div class="form-section-info">
-          <h3>Estimate Settings</h4>
+    </div>
+    <section class="form-section">
+      <div class="form-section-info">
+        <h3>Estimate Settings</h4>
           <p style="font-size: 20px;color:black">Get the estimated impact at this time.</p>
+      </div>
+      <div class="form-section-inputs">
+        <div class="form-input">
+          <label for="periodType">Period Type</label>
+          <select name="periodType" id="periodType" data-period-type>
+            <option value="days">days</option>
+            <option value="weeks">weeks</option>
+            <option value="months">months</option>
+          </select>
         </div>
-        <div class="form-section-inputs">
-          <div class="form-input">
-            <label for="periodType">Period Type</label>
-            <select name="periodType" id="periodType" data-period-type>
-              <option value="days">days</option>
-              <option value="weeks">weeks</option>
-              <option value="months">months</option>
-            </select>
-          </div>
-          <div class="form-input">
-            <label for="timeToElapse">Time Elapsed</label>
-            <input type="number" id="timeToElapse" name="timeToElapse" placeholder="17" data-time-to-elapse required>
-          </div>
+        <div class="form-input">
+          <label for="timeToElapse">Time Elapsed</label>
+          <input type="number" id="timeToElapse" name="timeToElapse" placeholder="17" data-time-to-elapse required>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="form-section">
-        <button data-go-estimate>CHECK ESTIMATES</button>
-      </section>
+    <section class="form-section">
+      <button data-go-estimate>CHECK ESTIMATES</button>
+    </section>
     </form>
-    
-  
+
+
     <div class="result"></div>
   </main>
 
- 
+
 </body>
+
 </html>
