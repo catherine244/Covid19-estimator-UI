@@ -87,13 +87,14 @@ main {
 .form-section button {
   width: 473px;
   height: 48px;
-  background-color: #3399ff;
+  background-color: #fff;
   border: none;
   border-radius: 8px;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
-  color: #f5f9fd;
+  color:black;
   margin: 0 auto;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
